@@ -32,6 +32,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+compileGroovy.mustRunAfter compileScala
+
 jar {
     manifest {
         attributes 'Main-Class': mainClassName,

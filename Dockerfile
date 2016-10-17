@@ -1,5 +1,7 @@
 FROM openjdk:jre-alpine
 
-ADD ./build/distributions/sample-groovy-worker.tar /srv
+RUN apk add --update bash && rm -rf /var/cache/apk/*
 
-CMD ["/srv/sample-groovy-worker/bin/sample-groovy-worker"]
+ADD ./build/distributions/sample-java-workers.tar /srv
+
+CMD ["/srv/sample-java-workers/bin/sample-java-workers"]
