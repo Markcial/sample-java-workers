@@ -1,6 +1,5 @@
 import akka.actor.ActorSystem
 import akka.actor.Props
-import akka.japi.Creator
 
 class Application {
     static void main(String[] args){

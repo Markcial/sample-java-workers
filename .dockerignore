@@ -1,1 +1,11 @@
+.*
+src
+build
+*.gradle
+LICENSE
+Dockerfile
+gradle*
+*.iml
+*.ipr
+*.iws
 !build/distributions/*.tar
